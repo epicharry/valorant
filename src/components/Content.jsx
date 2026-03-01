@@ -179,15 +179,21 @@ const ContentSection = () => {
                             <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
                                 <div className="text-left pt-10 md:pt-30">
                                     <h1 ref={title1Ref} className="text-6xl md:text-7xl font-heading uppercase text-valorant-offwhite tracking-tighter overflow-hidden">
-                                        Season 2025 <br />
-                                        Act IV
+                                        Match History <br />
+                                        & Stats
 
                                     </h1>
 
                                     <p ref={textRef} className="mt-5 text-lg font-bold text-valorant-offwhite mb-8">
-                                        Brave the harsh beauty of Corrode. New ground, classic energy.
+                                        Click on any player to view their recent match history and rank progression. Track your own performance over time.
                                     </p>
-                                    <ValorantButton variant="red">Watch Now</ValorantButton>
+                                    <a
+                                        href="https://github.com/epicharry/valradiant/releases/download/v1.4.1/VALRadiant-Setup-1.4.1.exe"
+                                        download
+                                        style={{ textDecoration: 'none' }}
+                                    >
+                                        <ValorantButton variant="red">Download Now</ValorantButton>
+                                    </a>
 
                                 </div>
 

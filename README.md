@@ -1,13 +1,24 @@
-# Valorant React Website
+# VALRadiant - Valorant Companion App Landing Page
 
-A modern React application built with Vite that recreates the Valorant website with smooth animations, interactive components, and responsive design.
+A modern React landing page built with Vite for VALRadiant, a desktop companion application for Valorant players. Features smooth animations, interactive components, and responsive design.
 
-## Features
+## About VALRadiant
+
+VALRadiant is a production-ready desktop application for Valorant players to view real-time match information, player stats, and match history.
+
+### Key Features
+- **Match Detection**: Automatically detects pregame and live matches
+- **Player Stats**: View ranks, recent performance, and agent preferences
+- **Match History**: Click on any player to view their recent match history
+- **No Login Required**: Uses Riot's local API, no credentials needed
+- **Safe to Use**: Complies with Riot's terms of service
+
+## Landing Page Features
 
 - ⚡ **Vite** - Fast build tool and development server
 - ⚛️ **React 18** - Latest React features with hooks
 - 🎨 **GSAP** - Professional animations and scroll triggers
-- 📱 **Swiper** - Touch-enabled carousel for agents
+- 📱 **Swiper** - Touch-enabled carousel
 - 🎯 **Lenis** - Smooth scrolling experience
 - 📱 **Responsive Design** - Mobile-first approach
 - 🎬 **Video Background** - Hero section with video background

@@ -105,21 +105,25 @@ const Header = () => {
 
         <ul className="nav-menu">
           <li className="nav-item">
-            <a href="#">Game</a>
+            <a href="#features">Features</a>
           </li>
           <li className="nav-item">
-            <a href="#">Agents</a>
+            <a href="#news">Updates</a>
           </li>
           <li className="nav-item">
-            <a href="#">News</a>
+            <a href="#about">About</a>
           </li>
           <li className="nav-item">
-            <a href="#">Esports</a>
+            <a href="https://github.com/epicharry/valradiant" target="_blank" rel="noopener noreferrer">GitHub</a>
           </li>
         </ul>
 
-        <a href="#" className="nav-cta-button">
-          PLAY NOW
+        <a
+          href="https://github.com/epicharry/valradiant/releases/download/v1.4.1/VALRadiant-Setup-1.4.1.exe"
+          download
+          className="nav-cta-button"
+        >
+          DOWNLOAD
         </a>
 
         <div className="menu-icon" onClick={handleMenuClick}>
@@ -141,30 +145,34 @@ const Header = () => {
             className="mobile-nav-item"
             ref={(el) => (navLinksRef.current[0] = el)}
           >
-            <a href="#">Game</a>
+            <a href="#features" onClick={handleCloseClick}>Features</a>
           </li>
           <li
             className="mobile-nav-item"
             ref={(el) => (navLinksRef.current[1] = el)}
           >
-            <a href="#">Agents</a>
+            <a href="#news" onClick={handleCloseClick}>Updates</a>
           </li>
           <li
             className="mobile-nav-item"
             ref={(el) => (navLinksRef.current[2] = el)}
           >
-            <a href="#">News</a>
+            <a href="#about" onClick={handleCloseClick}>About</a>
           </li>
           <li
             className="mobile-nav-item"
             ref={(el) => (navLinksRef.current[3] = el)}
           >
-            <a href="#">Esports</a>
+            <a href="https://github.com/epicharry/valradiant" target="_blank" rel="noopener noreferrer">GitHub</a>
           </li>
         </ul>
 
-        <a href="#" className="mobile-nav-cta-button">
-          PLAY NOW
+        <a
+          href="https://github.com/epicharry/valradiant/releases/download/v1.4.1/VALRadiant-Setup-1.4.1.exe"
+          download
+          className="mobile-nav-cta-button"
+        >
+          DOWNLOAD
         </a>
       </aside>
     </header>

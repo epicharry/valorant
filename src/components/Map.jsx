@@ -133,13 +133,19 @@ function Map() {
                                 {/* Text Content - Left Side */}
                                 <div className="text-left pt-10 md:pt-20 lg:pt-30 lg:w-1/2 lg:pr-8">
                                     <h1 ref={title1Ref} className="text-4xl sm:text-5xl md:text-6xl font-heading uppercase text-valorant-dark tracking-tighter">
-                                        YOUR MAPS <br />
-                                        FIGHT AROUND THE WORLD
+                                        SAFE & SECURE <br />
+                                        NO LOGIN REQUIRED
                                     </h1>
                                     <p ref={textRef} className="mt-5 text-lg font-bold text-valorant-dark mb-8">
-                                        Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.
+                                        VALRadiant uses Riot's local API, so no credentials are needed. All sensitive data stays on your machine. Built with official Riot Games APIs and fully compliant with their terms of service.
                                     </p>
-                                    <ValorantButton variant="red">VIEW ALL MAPS</ValorantButton>
+                                    <a
+                                        href="https://github.com/epicharry/valradiant/releases/download/v1.4.1/VALRadiant-Setup-1.4.1.exe"
+                                        download
+                                        style={{ textDecoration: 'none' }}
+                                    >
+                                        <ValorantButton variant="red">DOWNLOAD NOW</ValorantButton>
+                                    </a>
                                 </div>
 
                                 {/* Image - Right Side (on lg+ screens) */}

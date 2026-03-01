@@ -113,7 +113,7 @@ const Hero = () => {
 
       <div className="hero-content">
         <p className="hero-subtitle" ref={heroSubtitleRef}>
-          A 5v5 character-based tactical shooter.
+          Your Ultimate Valorant Companion App
         </p>
         <img
           src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7b76209193f1bfe190d3ae6ef8728328870be9c3-736x138.png?auto=format&fit=fill&q=80&w=375"
@@ -121,13 +121,13 @@ const Hero = () => {
           className="hero-logo"
           ref={heroLogoRef}
         />
-        {/* <button className="btn" ref={ctaButtonRef}>
-          <span className="btn__inner">
-            <span className="btn__slide"></span>
-            <span className="btn__content">PLAY NOW</span>
-          </span>
-        </button> */}
-        <ValorantButton variant="red">PLAY NOW</ValorantButton>
+        <a
+          href="https://github.com/epicharry/valradiant/releases/download/v1.4.1/VALRadiant-Setup-1.4.1.exe"
+          download
+          style={{ textDecoration: 'none' }}
+        >
+          <ValorantButton variant="red">DOWNLOAD NOW</ValorantButton>
+        </a>
 
       </div>
 

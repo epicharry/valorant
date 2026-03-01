@@ -60,21 +60,27 @@ const ValorantSection = () => {
   }, []);
 
   return (
-    <section className="we-are-valorant" ref={valorantSectionRef}>
+    <section id="about" className="we-are-valorant" ref={valorantSectionRef}>
       <div className="">
         <div className="valorant-text-bg" ref={valorantTextBgRef}>
-          VALORANT
+          VALRADIANT
         </div>
         <h2 className="section-title" ref={sectionTitleRef}>
-          A 5v5 character-based tactical shooter.
+          Your Ultimate Valorant Companion
         </h2>
         <p ref={sectionParagraphRef}>
-          This is more than just a shooter. It's a test of creativity, clutch
-          plays, and strategy. Outwit, outplay, and outshine your competition.
+          VALRadiant is a production-ready desktop application that enhances your Valorant experience. No login required - the app uses Riot's local API to keep all your data safe and secure on your machine. Built with official Riot Games APIs and fully compliant with their terms of service.
         </p>
-        <button ref={buttonRef} className="font-semibold text-sm relative cursor-pointer text-center hover:bg-[gray]/40 px-4 py-2 rounded-[8px] uppercase mt-4 tracking-wider">
-          DOWNLOAD RIOT MOBILE COMPANION APP
-        </button>
+        <a
+          href="https://github.com/epicharry/valradiant"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <button ref={buttonRef} className="font-semibold text-sm relative cursor-pointer text-center hover:bg-[gray]/40 px-4 py-2 rounded-[8px] uppercase mt-4 tracking-wider">
+            VIEW ON GITHUB
+          </button>
+        </a>
       </div>
     </section>
   );

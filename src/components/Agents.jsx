@@ -204,8 +204,9 @@ const AgentsSection = () => {
 
   return (
     <section
+      id="features"
       ref={sectionRef}
-      className="bg-valorant-dark bg-opacity-50 text-white flex justify-center pt-10 md:pt-8 px-4 md:px-0" // Added vertical padding
+      className="bg-valorant-dark bg-opacity-50 text-white flex justify-center pt-10 md:pt-8 px-4 md:px-0"
     >
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 max-w-7xl w-full">
         <div className="relative flex justify-center w-full md:w-1/2">
@@ -224,25 +225,28 @@ const AgentsSection = () => {
         </div>
         <div className="text-center md:text-left w-full md:w-1/2 space-y-6 p-3 md:p-3">
           <h2
-            className="title overflow-hidden" // Add overflow-hidden here for the mask effect
+            className="title overflow-hidden"
             ref={titleRef}
           >
-            YOUR AGENTS
+            REAL-TIME STATS
           </h2>
           <p
-            className="text-lg leading-relaxed overflow-hidden" // Add overflow-hidden for the mask effect
+            className="text-lg leading-relaxed overflow-hidden"
             ref={descRef}
           >
             <strong className="block mb-2">
-              Creativity is your greatest weapon.
+              Know your opponents before the match begins.
             </strong>
-            More than guns and bullets, you’ll choose an Agent armed with
-            adaptive, swift, and lethal abilities that create opportunities to
-            let your gunplay shine. No two Agents play alike, just as no two
-            highlight reels will look the same.
+            VALRadiant automatically detects your matches and displays real-time player information during agent select. View ranks, recent performance, agent preferences, and match history for every player in your lobby.
           </p>
 
-          <ValorantButton variant="white">VIEW AGENTS</ValorantButton>
+          <a
+            href="https://github.com/epicharry/valradiant/releases/download/v1.4.1/VALRadiant-Setup-1.4.1.exe"
+            download
+            style={{ textDecoration: 'none' }}
+          >
+            <ValorantButton variant="white">DOWNLOAD NOW</ValorantButton>
+          </a>
         </div>
       </div>
     </section>

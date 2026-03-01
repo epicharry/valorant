@@ -147,28 +147,28 @@ gsap.registerPlugin(ScrollTrigger);
 // --- DUMMY DATA ---
 const newsData = [
     {
-        category: 'Game Updates',
-        date: '6/24/2025',
-        title: 'VALORANT Patch Notes 11.00',
-        description: 'Agent updates, new map Corrode, map rotation, and so much more!',
+        category: 'Release',
+        date: '3/01/2026',
+        title: 'VALRadiant v1.4.1 Now Available',
+        description: 'Download the latest version with improved match detection, performance optimizations, and bug fixes.',
         image: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/f704e8033b985e3cbe00dec61ac4ee0a3abb6440-1920x1080.jpg?auto=format&fit=crop&q=80&h=319&w=567&crop=center',
-        link: '#',
+        link: 'https://github.com/epicharry/valradiant/releases/tag/v1.4.1',
     },
     {
-        category: 'Esports',
-        date: '6/23/2025',
-        title: 'Team Tarik vs Team Toast play Corrode | New Map Showmatch | VALORANT',
-        description: 'Watch as Team Tarik vs. Team Toast play the first live match on the new VALORANT Map Corrode.',
+        category: 'Features',
+        date: '2/15/2026',
+        title: 'Automatic Match Detection',
+        description: 'VALRadiant now automatically detects when you enter pregame and live matches, displaying real-time player stats.',
         image: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/02c5503a8a9814082072c8d82ba666e55ddb2fc0-1920x1080.jpg?auto=format&fit=crop&q=80&h=319&w=567&crop=cente',
-        link: '#',
+        link: 'https://github.com/epicharry/valradiant',
     },
     {
-        category: 'Dev',
-        date: '6/22/2025',
-        title: 'Behind the Walls of Corrode // Dev Diaries',
-        description: "Hear how the dev team approached designing VALORANT's newest map, Corrode.",
+        category: 'Security',
+        date: '2/01/2026',
+        title: 'Privacy First Approach',
+        description: "No login required. VALRadiant uses Riot's local API to keep all your data safe and secure on your machine.",
         image: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/70c1fd08e37677c94a5854920e9a8b6835536b0d-1920x1080.jpg?auto=format&fit=crop&q=80&h=319&w=567&crop=center',
-        link: '#',
+        link: 'https://github.com/epicharry/valradiant',
     },
 ];
 
@@ -176,6 +176,8 @@ const newsData = [
 const NewsCard = ({ item }) => (
     <a
         href={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
         className="news-card group block"
         aria-label={`Read more about ${item.title}`}
     >
@@ -235,10 +237,10 @@ const News = () => {
     };
 
     return (
-        <section ref={containerRef} className="py-16 px-6 sm:px-8">
+        <section id="news" ref={containerRef} className="py-16 px-6 sm:px-8">
             <div className="">
                 <h2 className="text-4xl md:text-5xl font-heading mb-12 uppercase">
-                    The Latest
+                    Latest Updates
                 </h2>
 
                 {isMobile ? (
