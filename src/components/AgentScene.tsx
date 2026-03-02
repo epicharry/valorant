@@ -82,14 +82,14 @@ export default function AgentScene() {
   ];
 
   const rankData = [
-    { name: 'Iron', icon: '/iron3.png', users: 312, color: 'from-gray-600 to-gray-700', order: 1 },
-    { name: 'Bronze', icon: '/bronze3.png', users: 487, color: 'from-orange-700 to-amber-800', order: 2 },
-    { name: 'Silver', icon: '/silver3.png', users: 634, color: 'from-gray-300 to-gray-400', order: 3 },
-    { name: 'Gold', icon: '/gold3.png', users: 912, color: 'from-yellow-500 to-amber-600', order: 4 },
-    { name: 'Radiant', icon: '/radiant.png', users: 26, color: 'from-yellow-200 to-yellow-400', special: true, order: 5 },
-    { name: 'Diamond', icon: '/diamond3.png', users: 1534, color: 'from-purple-400 to-pink-500', order: 6 },
-    { name: 'Ascendant', icon: '/ascendant3.png', users: 823, color: 'from-emerald-400 to-teal-500', order: 7 },
-    { name: 'Immortal', icon: '/immortal3.png', users: 1246, color: 'from-red-500 to-rose-600', order: 8 },
+    { name: 'Iron', icon: 'https://trackercdn.com/cdn/tracker.gg/valorant/db/tiers/iron3.png', users: 312, color: 'from-gray-600 to-gray-700', order: 1 },
+    { name: 'Bronze', icon: 'https://trackercdn.com/cdn/tracker.gg/valorant/db/tiers/bronze3.png', users: 487, color: 'from-orange-700 to-amber-800', order: 2 },
+    { name: 'Silver', icon: 'https://trackercdn.com/cdn/tracker.gg/valorant/db/tiers/silver3.png', users: 634, color: 'from-gray-300 to-gray-400', order: 3 },
+    { name: 'Gold', icon: 'https://trackercdn.com/cdn/tracker.gg/valorant/db/tiers/gold3.png', users: 912, color: 'from-yellow-500 to-amber-600', order: 4 },
+    { name: 'Radiant', icon: 'https://trackercdn.com/cdn/tracker.gg/valorant/db/tiers/radiant.png', users: 26, color: 'from-yellow-200 to-yellow-400', special: true, order: 5 },
+    { name: 'Diamond', icon: 'https://trackercdn.com/cdn/tracker.gg/valorant/db/tiers/diamond3.png', users: 1534, color: 'from-purple-400 to-pink-500', order: 6 },
+    { name: 'Ascendant', icon: 'https://trackercdn.com/cdn/tracker.gg/valorant/db/tiers/ascendant3.png', users: 823, color: 'from-emerald-400 to-teal-500', order: 7 },
+    { name: 'Immortal', icon: 'https://trackercdn.com/cdn/tracker.gg/valorant/db/tiers/immortal3.png', users: 1246, color: 'from-red-500 to-rose-600', order: 8 },
   ];
 
   return (

@@ -77,6 +77,7 @@ export default function FAQSection() {
 
   return (
     <section
+      id="faq"
       ref={sectionRef}
       className="relative min-h-screen flex items-center justify-center py-20 px-6"
     >

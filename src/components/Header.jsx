@@ -111,7 +111,7 @@ const Header = () => {
             <a href="#news">Updates</a>
           </li>
           <li className="nav-item">
-            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
           </li>
           <li className="nav-item">
             <a href="https://github.com/epicharry/valradiant" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -157,7 +157,7 @@ const Header = () => {
             className="mobile-nav-item"
             ref={(el) => (navLinksRef.current[2] = el)}
           >
-            <a href="#about" onClick={handleCloseClick}>About</a>
+            <a href="#faq" onClick={handleCloseClick}>FAQ</a>
           </li>
           <li
             className="mobile-nav-item"

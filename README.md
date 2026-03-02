@@ -4,25 +4,30 @@ A modern React landing page built with Vite for VALRadiant, a desktop companion 
 
 ## About VALRadiant
 
-VALRadiant is a production-ready desktop application for Valorant players to view real-time match information, player stats, and match history.
+VALRadiant is a production-ready desktop application for Valorant players to view real-time match information, player stats, and match history. This landing page showcases the app's features with modern animations and an interactive design.
 
-### Key Features
+### VALRadiant App Features
 - **Match Detection**: Automatically detects pregame and live matches
 - **Player Stats**: View ranks, recent performance, and agent preferences
 - **Match History**: Click on any player to view their recent match history
 - **No Login Required**: Uses Riot's local API, no credentials needed
 - **Safe to Use**: Complies with Riot's terms of service
+- **Real-time Information**: See player details during agent select phase
+
+[Download VALRadiant v1.4.1](https://github.com/epicharry/valradiant/releases/download/v1.4.1/VALRadiant-Setup-1.4.1.exe)
 
 ## Landing Page Features
 
 - ⚡ **Vite** - Fast build tool and development server
-- ⚛️ **React 18** - Latest React features with hooks
+- ⚛️ **React 18** - Latest React features with hooks and TypeScript
 - 🎨 **GSAP** - Professional animations and scroll triggers
-- 📱 **Swiper** - Touch-enabled carousel
 - 🎯 **Lenis** - Smooth scrolling experience
 - 📱 **Responsive Design** - Mobile-first approach
-- 🎬 **Video Background** - Hero section with video background
 - 🎮 **Interactive Components** - Hover effects and animations
+- 💎 **Modern UI** - Gradient effects, glassmorphism, and animated backgrounds
+- 📊 **Dynamic Stats** - Animated counters showing user statistics
+- ❓ **FAQ Section** - Collapsible FAQ with smooth animations
+- 🏆 **Rank Display** - Shows player distribution across all Valorant ranks
 
 ## Tech Stack
 
@@ -78,45 +83,63 @@ npm run preview
 ```
 src/
 ├── components/          # React components
-│   ├── Preloader.jsx    # Loading screen
-│   ├── Header.jsx       # Navigation header
-│   ├── Hero.jsx         # Hero section with video
-│   ├── AgentsSection.jsx # Agents carousel
-│   ├── ValorantSection.jsx # About section
-│   └── Footer.jsx       # Footer
+│   ├── Preloader.jsx    # Loading screen animation
+│   ├── Header.jsx       # Navigation header with scroll effects
+│   ├── HeroSection.tsx  # Hero section with animated intro
+│   ├── FeatureScene.tsx # Feature showcase sections
+│   ├── AgentScene.tsx   # Rank distribution display
+│   ├── News.jsx         # Updates and news section
+│   ├── FAQSection.tsx   # Frequently asked questions
+│   ├── FinalSection.tsx # Final CTA with download button
+│   └── Footer.jsx       # Footer with social links
 ├── hooks/               # Custom React hooks
-│   └── useLenis.js      # Smooth scrolling setup
+│   ├── useLenis.js      # Smooth scrolling setup
+│   └── useIsMobile.js   # Mobile detection hook
 ├── assets/              # Static assets
-│   ├── images/          # Agent images and icons
-│   └── video/           # Video files
+│   └── images/          # Images and icons
 ├── App.jsx              # Main app component
 ├── main.jsx             # App entry point
 └── index.css            # Global styles
 ```
 
-## Key Features
+## Key Sections
 
-### 1. Preloader Animation
-- 5-second countdown with GSAP animations
-- Smooth fade-out transition
+### 1. Hero Section
+- Animated Valorant logo with GSAP
+- Gradient text effects
+- Parallax background animations
+- Scroll-to-explore interaction
 
-### 2. Hero Section
-- Full-screen video background
-- Volume control toggle
-- Animated text and CTA button
+### 2. Feature Scenes
+- Three alternating feature showcases
+- Live Match Stats tracking
+- Match History timeline
+- Player Search capabilities
+- Scroll-triggered animations
 
-### 3. Agents Section
-- Swiper carousel with 16 Valorant agents
-- Hover effects and animations
-- Responsive breakpoints
+### 3. Rank Distribution
+- Interactive rank display
+- Hover effects on rank cards
+- Statistics for all Valorant ranks (Iron to Radiant)
+- Special highlighting for top-tier ranks
 
-### 4. Smooth Scrolling
-- Lenis integration for buttery smooth scrolling
-- GSAP ScrollTrigger for scroll-based animations
+### 4. News & Updates
+- Latest VALRadiant releases
+- Feature announcements
+- Security and privacy updates
+- Mobile-responsive carousel
 
-### 5. Mobile Navigation
-- Hamburger menu with slide-out sidebar
-- GSAP animations for smooth transitions
+### 5. FAQ Section
+- Collapsible questions and answers
+- Categorized by topic
+- Smooth expand/collapse animations
+- Covers app usage, legality, and technical details
+
+### 6. Final CTA Section
+- Animated download button
+- Live statistics counters
+- User count, matches analyzed, player searches
+- Mouse-tracking gradient effects
 
 ## Dependencies
 
@@ -124,8 +147,11 @@ src/
 - `react`: ^18.2.0
 - `react-dom`: ^18.2.0
 - `gsap`: ^3.12.2
+- `lenis`: ^1.0.27
 - `swiper`: ^11.0.5
-- `@studio-freight/lenis`: ^1.0.27
+- `lucide-react`: Latest (for icons)
+- `react-icons`: ^5.5.0
+- `tailwindcss`: ^4.1.10
 
 ### Development Dependencies
 - `@vitejs/plugin-react`: ^4.2.1
